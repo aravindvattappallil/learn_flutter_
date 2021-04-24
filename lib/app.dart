@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import './widget/basicwidget.dart';
+//import './widget/basicwidget.dart'; hidden to use SingleChild
+import './widget/singlechild.dart';
 
 class App extends StatelessWidget {
   @override
@@ -7,9 +8,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: "First App",
       home: Scaffold(
-        body: Center(
-          child: BasicWidget(),
-        ),
+        body: SingleChild(),
       ),
     );
   }

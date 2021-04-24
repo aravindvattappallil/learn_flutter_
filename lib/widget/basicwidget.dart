@@ -23,7 +23,9 @@ class BasicWidget extends StatelessWidget {
                 offset: Offset(10, 10))
           ]),
       child: Center(
-        child: Text("first app"),
+        child: Text(
+          "first app",
+        ),
       ),
     );
   }
