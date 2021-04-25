@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 //import './widget/basicwidget.dart'; hidden to use SingleChild
-import './widget/singlechild.dart';
+//import './widget/singlechild.dart';
+//import './widget/multichildlayout.dart';
+import './widget/columnwidget.dart';
 
 class App extends StatelessWidget {
   @override
@@ -8,7 +10,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: "First App",
       home: Scaffold(
-        body: SingleChild(),
+        body: ColumnWidget(),
       ),
     );
   }
