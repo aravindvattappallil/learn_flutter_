@@ -6,7 +6,8 @@ import 'package:flutter_app/widget/buttonwidget.dart';
 //import './widget/gridview.dart';
 //import './widget/stackwidget.dart';
 //import './widget/imagewidget.dart';
-import './widget/buttonwidget.dart';
+//import './widget/buttonwidget.dart';
+import './widget/textwidget.dart';
 
 class App extends StatelessWidget {
   @override
@@ -14,7 +15,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: "First App",
       home: Scaffold(
-        body: Buttonwidget(),
+        body: Textwidget(),
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           backgroundColor: Colors.blue,
