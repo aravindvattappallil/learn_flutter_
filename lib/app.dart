@@ -8,7 +8,8 @@ import 'package:flutter_app/widget/buttonwidget.dart';
 //import './widget/imagewidget.dart';
 //import './widget/buttonwidget.dart';
 //import './widget/textwidget.dart';
-import './widget/textfield.dart';
+//import './widget/textfield.dart';
+import './widget/widgetrefactoring.dart';
 
 class App extends StatelessWidget {
   @override
@@ -16,7 +17,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: "First App",
       home: Scaffold(
-        body: Textfieldwidget(),
+        body: Widgetrefactoring(),
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           backgroundColor: Colors.blue,
