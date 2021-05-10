@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/widget/buttonwidget.dart';
+//import 'package:flutter_app/widget/buttonwidget.dart';
 //import './widget/basicwidget.dart'; hidden to use SingleChild
 //import './widget/singlechild.dart';
 //import './widget/multichildlayout.dart';
@@ -9,7 +9,10 @@ import 'package:flutter_app/widget/buttonwidget.dart';
 //import './widget/buttonwidget.dart';
 //import './widget/textwidget.dart';
 //import './widget/textfield.dart';
-import './widget/widgetrefactoring.dart';
+//import './widget/widgetrefactoring.dart';
+//import './widget/cardwidget.dart';
+//import './widget/tabwidget.dart';
+import './widget/alertwidget.dart';
 
 class App extends StatelessWidget {
   @override
@@ -17,7 +20,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: "First App",
       home: Scaffold(
-        body: Widgetrefactoring(),
+        body: Alertwidget(),
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           backgroundColor: Colors.blue,
