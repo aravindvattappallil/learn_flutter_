@@ -6,29 +6,25 @@ class Newcard extends StatelessWidget {
   Newcard({Key key, this.datas}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 100,
-      child: Column(
-        children: [
-          Container(
-            color: Colors.redAccent,
-            child: Column(
-              children: [
-                Expanded(
-                    child: Icon(
-                  datas.icon,
-                  size: 50,
-                )),
-                Text(
-                  datas.title,
-                  style: TextStyle(fontSize: 20),
-                )
-              ],
-            ),
-          ),
-        ],
+    return Card(
+      color: Colors.yellow,
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Expanded(
+                child: Icon(
+              datas.icon,
+              size: 50,
+            )),
+            Text(
+              datas.title,
+              style: TextStyle(fontSize: 20),
+            )
+          ],
+        ),
       ),
     );
   }
-}
-*/
+}*/

@@ -13,7 +13,9 @@ import 'package:flutter/material.dart';
 //import './widget/cardwidget.dart';
 //import './widget/tabwidget.dart';
 //import './widget/alertwidget.dart';
-import './widget/listwidgetu.dart';
+//import './widget/listwidgetu.dart';
+//import './widget/toastwidget.dart';
+import 'widget/checkbox_radio.dart';
 
 class App extends StatelessWidget {
   @override
@@ -21,7 +23,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: "First App",
       home: Scaffold(
-        body: Listwidget(),
+        body: Checkboxradio(),
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           backgroundColor: Colors.blue,

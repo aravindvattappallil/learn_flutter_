@@ -36,6 +36,12 @@ class Listwidget extends StatelessWidget {
     28,
     29
   ];
+  List<String> images = [
+    "https://free4kwallpapers.com/uploads/originals/2019/09/02/asus-rog-strix-owl-wallpaper.jpg",
+    "https://free4kwallpapers.com/uploads/originals/2019/09/02/asus-rog-strix-owl-wallpaper.jpg",
+    "https://free4kwallpapers.com/uploads/originals/2019/09/02/asus-rog-strix-owl-wallpaper.jpg",
+    "https://free4kwallpapers.com/uploads/originals/2019/09/02/asus-rog-strix-owl-wallpaper.jpg",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -50,8 +56,13 @@ class Listwidget extends StatelessWidget {
     //);
     // },
     //);
-    /* return GridView.count(
+
+// ----------------- gridview.count------------
+
+    /*return GridView.count(
       crossAxisCount: 2,
+      mainAxisSpacing: 20,
+      crossAxisSpacing: 20,
       children: List.generate(datas.length, (index) {
         return Center(
           child: Newcard(
@@ -60,7 +71,101 @@ class Listwidget extends StatelessWidget {
         );
       }),
     );*/
-    return Container(
+
+//------------------------gridvie.builder--------
+
+    /*return GridView.builder(
+        itemCount: images.length,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 100,
+        ),
+        itemBuilder: (BuildContext context, int index) {
+          return Container(child: Image.network(images[index]));
+        });*/
+
+//-------------------------------------gridview.extend-------------------
+
+    return GridView.extent(
+      primary: false,
+      padding: EdgeInsets.all(8),
+      maxCrossAxisExtent: 250,
+      crossAxisSpacing: 10,
+      children: [
+        Container(
+          child: Image.network(
+            "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg",
+            width: 200,
+            height: 200,
+          ),
+        ),
+        Container(
+          child: Image.network(
+            "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg",
+            width: 200,
+            height: 200,
+          ),
+        ),
+        Container(
+          child: Image.network(
+            "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg",
+            width: 200,
+            height: 200,
+          ),
+        ),
+        Container(
+          child: Image.network(
+            "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg",
+            width: 200,
+            height: 200,
+          ),
+        ),
+        Container(
+          child: Image.network(
+            "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg",
+            width: 200,
+            height: 200,
+          ),
+        ),
+        Container(
+          child: Image.network(
+            "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg",
+            width: 200,
+            height: 200,
+          ),
+        ),
+        Container(
+          child: Image.network(
+            "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg",
+            width: 200,
+            height: 200,
+          ),
+        ),
+        Container(
+          child: Image.network(
+            "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg",
+            width: 200,
+            height: 200,
+          ),
+        ),
+        Container(
+          child: Image.network(
+            "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg",
+            width: 200,
+            height: 200,
+          ),
+        ),
+        Container(
+          child: Image.network(
+            "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-chevrolet-corvette-z06-1607016574.jpg",
+            width: 200,
+            height: 200,
+          ),
+        ),
+      ],
+    );
+
+    /*return Container(
       height: 150,
       child: ListView(
         scrollDirection: Axis.horizontal,
@@ -117,10 +222,11 @@ class Listwidget extends StatelessWidget {
           ),
         ],
       ),
-    );
+    );*/
   }
 }
 
+// ignore: camel_case_types
 /*class data {
   const data({this.title, this.icon});
   final String title;
@@ -160,5 +266,4 @@ const List<data> datas = const <data>[
     title: "Home",
     icon: Icons.home,
   ),
-];
-*/
+];*/
