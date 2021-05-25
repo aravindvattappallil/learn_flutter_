@@ -16,7 +16,10 @@ import 'package:flutter/material.dart';
 //import './widget/listwidgetu.dart';
 //import './widget/toastwidget.dart';
 //import 'widget/checkbox_radio.dart';
-import 'widget/progrssandsnackbar.dart';
+//import 'widget/progrssandsnackbar.dart';
+//import 'widget/tooltipandslider.dart';
+//import 'widget/imageslideru.dart';
+import 'widget/imageslidertry.dart';
 
 class App extends StatelessWidget {
   @override
@@ -24,7 +27,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: "First App",
       home: Scaffold(
-        body: Progress_snack(),
+        body: Imageslider(),
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           backgroundColor: Colors.blue,

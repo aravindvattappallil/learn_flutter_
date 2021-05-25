@@ -18,12 +18,12 @@ class Alerts extends StatelessWidget {
       child: Container(
         child: RaisedButton(
           onPressed: () async {
-            //textfieldalertdialogwidget(context, _texteditingcontroller);
+            textfieldalertdialogwidget(context, _texteditingcontroller);
             //alertdialogwidget(context);
             //final field fieldatt = await conformalertdialogwidget(context);
             // print("user selected= $fieldatt");
-            final selection opt = await selectionalertdialogwidget(context);
-            print(opt);
+            //final selection opt = await selectionalertdialogwidget(context);
+            ///print(opt);
           },
           child: Text("basic alert"),
         ),
