@@ -19,15 +19,27 @@ import 'package:flutter/material.dart';
 //import 'widget/progrssandsnackbar.dart';
 //import 'widget/tooltipandslider.dart';
 //import 'widget/imageslideru.dart';
-import 'widget/imageslidertry.dart';
+//import 'widget/imageslidertry.dart';
+//import 'widget/switchandtable.dart';
+//import 'widget/calendarwidget.dart';
+//import 'widget/navigateroute.dart';
+//import 'widget/navigateroute.dart';
+import 'widget/splashscreens.dart';
 
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //second navigation method
+      /*initialRoute: '/',
+      routes: {
+        '/': (context) => Navigateroute(),
+        '/second': (context) => Secondpage(),
+      },*/
       title: "First App",
-      home: Scaffold(
-        body: Imageslider(),
+      home: Splash2(),
+      /*Scaffold(
+        body: Navigateroute(),
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           backgroundColor: Colors.blue,
@@ -109,7 +121,7 @@ class App extends StatelessWidget {
             ],
           ),
         ),
-      ),
+      ),*/
     );
   }
 }
