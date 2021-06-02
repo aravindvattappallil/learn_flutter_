@@ -24,7 +24,8 @@ import 'package:flutter/material.dart';
 //import 'widget/calendarwidget.dart';
 //import 'widget/navigateroute.dart';
 //import 'widget/navigateroute.dart';
-import 'widget/splashscreens.dart';
+//import 'widget/splashscreens.dart';
+import 'widget/firebasesignup.dart';
 
 class App extends StatelessWidget {
   @override
@@ -37,7 +38,7 @@ class App extends StatelessWidget {
         '/second': (context) => Secondpage(),
       },*/
       title: "First App",
-      home: Splash2(),
+      home: Homepage(),
       /*Scaffold(
         body: Navigateroute(),
         backgroundColor: Colors.blueGrey,

@@ -59,6 +59,7 @@ class Splash2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SplashScreen(
       seconds: 5,
+      //navigateAfterSeconds: Homepageaftersplash2(),
       navigateAfterSeconds: Homepageaftersplash2(),
       image: Image.network("https://safemoon.net/img/174x174.png"),
       photoSize: 100,
